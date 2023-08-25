@@ -31,3 +31,20 @@ function myFunc (el) {
         }
     });
 });
+
+$(document).ready(function() {
+    $('#moonpic, #sunpic').click(function() {
+        $('#moonpic, #sunpic').toggle();
+        if ($('#sunpic').is(':visible')) {
+        $('body').css({
+            'background-color': 'black',
+            'color': 'white'
+        });
+    } else {
+        $('body').css({
+            'background-color': 'white',
+            'color': 'black'
+        });
+    }
+});
+});
