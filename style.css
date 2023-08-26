@@ -395,3 +395,36 @@ h1 {
     width: 90vw;
     margin-left: 50px;
  }
+
+ .ui-widget-content { 
+    width: 140px; 
+    height: 120px;
+     padding: 0.5em;
+      float: left;
+      margin: 30px 5px 5px 20px;
+    z-index: 8; }
+
+ .ui-widget-header {
+     width: 150px;
+      height: 150px;
+       padding: 0.5em;
+     margin: 50px 5px 5px 20px;
+        z-index: 6; }
+
+.gamepic {
+    width: 120px;
+      height: 100px;
+      padding: 0.5em; 
+}
+
+.minigame {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.minigamep {
+    text-align: center;
+    color: grey;
+}

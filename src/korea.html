@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel-Blog</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="icon" href="img/boat.jpg" type="image/x-icon">
-    <script async src="script.js"></script>
+     <link rel="icon" href="../img/planeicon.svg" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+  <link rel="stylesheet" href="../style.css">
+   <script>
+   
+    </script>
 </head>
 <body>
    
@@ -30,8 +34,41 @@
     <br>
     <strong>Bulgogi</strong>, dünn geschnittenes, mariniertes und gegrilltes Rindfleisch, ist eines der bekanntesten Gerichte Südkoreas und wird oft mit einer Vielzahl von frischen Salaten und scharfen Saucen serviert.
                   <br>
-                  Die koreanische Straßenküche bietet eine Fülle von Geschmackserlebnissen, von scharfen Tteokbokki (Reiskuchen) bis hin zu knusprigen Hotteok (gefüllten Pfannkuchen), die die kulinarische Kreativität und Vielfalt des Landes widerspiegeln.
+                  Die koreanische Straßenküche bietet eine Fülle von Geschmackserlebnissen, von scharfen <strong>Tteokbokki</strong> (Reiskuchen) bis hin zu knusprigen <strong>Hotteok</strong> (gefüllten Pfannkuchen), die die kulinarische Kreativität und Vielfalt des Landes widerspiegeln.
 </div>
+<div class="minigame">
+<div id="draggable3" class="ui-widget-content">
+ <img class="gamepic" src="../img/kimchi.jpg" alt="kimchi"><p>Zum Namen ziehen</p>
+</div>
+
+<div id="draggable2" class="ui-widget-content">
+  <img class="gamepic" src="../img/Tteokbokki.jpg" alt="Tteokbokki"><p>Zum Namen ziehen</p>
+ </div>
+  
+ <div id="draggable4" class="ui-widget-content">
+  <img class="gamepic" src="../img/hotteok.jpg" alt="Hotteok"><p>Zum Namen ziehen</p>
+ </div>
+  
+ <div id="draggable" class="ui-widget-content">
+  <img class="gamepic" src="../img/bulgogi.jpg" alt="Bulgogi"><p>Zum Namen ziehen</p>
+ </div>
+  
+</div>
+<div class="minigame">
+  <div id="droppable" class="ui-widget-header">
+   <p><h3 class="minigamep">Bulgogi<br><br>Hier ablegen</h3></p>
+  </div>
+  <div id="droppable2" class="ui-widget-header">
+    <p><h3 class="minigamep">Tteokbokki<br><br>Hier ablegen</h3></p>
+  </div>
+  <div id="droppable3" class="ui-widget-header">
+    <p><h3 class="minigamep">Kimchi<br><br>Hier ablegen</h3></p>
+  </div>
+  <div id="droppable4" class="ui-widget-header">
+    <p><h3 class="minigamep">Hotteok<br><br>Hier ablegen</h3></p>
+  </div>
+</div>
+<script src="../script.js"></script>
 </body>
 
 </html>
