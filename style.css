@@ -391,4 +391,7 @@ h1 {
     text-decoration: none;
   }
  
- 
+ #accordion{
+    width: 90vw;
+    margin-left: 50px;
+ }
