@@ -370,3 +370,24 @@ h1 {
     to {opacity: 1}
   }
   
+
+  .faqbox {
+    position: absolute;
+    display: flex;
+    right: 80px;
+    bottom: 200px;
+    width: 100px;
+    height: auto;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 20px;
+    background-color: lightgrey;
+    text-decoration: none;
+    cursor: pointer;
+    transform: skew(20deg, -10deg);
+    z-index: 10;
+  }
+
+  .faqb {
+    text-decoration: none;
+  }
+  
