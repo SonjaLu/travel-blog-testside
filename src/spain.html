@@ -6,9 +6,10 @@
     <title>Travel-Blog</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="img/boat.jpg" type="image/x-icon">
-    <script async src="script.js"></script>
+   
+    <script async src="../script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+   
 </head>
 <body>
    
@@ -24,14 +25,47 @@
   <div class="content">
      
     <p class="plaintext">
-        <h1>R E C E T A S</h1><br>
-<div class="rezepte"><h1>Kulinarische Reise durch Spanien</h1>
+      
+<div class="rezepte">
+  <h1>Kulinarische Reise durch Spanien</h1>
   <strong>Paella</strong>, ein aromatisches Reisgericht mit Safran, Meeresfrüchten oder Fleisch, ist eines der bekanntesten Gerichte Spaniens und symbolisiert die reiche kulinarische Vielfalt der verschiedenen Regionen des Landes.
-    <br><br>
+    <br>
                   <strong>Tapas</strong>, kleine Appetithäppchen, die alles von Oliven über frittierten Tintenfisch bis hin zu Chorizo enthalten können, sind ein wesentlicher Bestandteil der spanischen Esskultur und werden oft in geselliger Runde bei einem Glas Wein oder Bier genossen.
                   <br>
+                  Tintenfisch <strong>Pulpo</strong> Gajego ist insbesondere an den spanischen Küsten ein sehr populäres Rezept, was ne nach Region teilweise recht unterschiedlich zubereitet wird.
                   Spanien ist auch berühmt für seine hochwertigen Olivenöle und Schinken, insbesondere den "Jamón Ibérico", der von den schwarzen Ibérico-Schweinen stammt und als eine der feinsten Schinkensorten der Welt gilt.
+                 
+                </div></p>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="../img/paella.jpg" style="width:100%">
+    <div class="text">Paella</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="../img/tapas.jpg" style="width:100%">
+    <div class="text" style="color:black">Tapas</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="../img/pulpo.jpg" style="width:100%">
+    <div class="text">Pulpo</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
 </body>
 
 </html>
