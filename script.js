@@ -50,46 +50,54 @@ $(document).ready(function () {
   });
 });
 
-
-
+//minigame
+let score = 0;
+let mealsArr = ["/img/kimchi.jpg", "/img/bulgogi.jpg", "/img/tteokbokki.jpg", "/img/hotteok.jpg"];
+let namesArr = ["Kimchi", "Bulgogi", "Tteokbokki", "Hotteok"];
 $(document).ready(function () {
-  $("#draggable").draggable();
+  shuffle(mealsArr);
+  $.each(mealsArr, function (index, value) {
+    let meal =value.slice(5, -4);
+    $("<div><img src=" + value + "></div>")
+    .appendTo("#meals")
+    .draggable({revert:true, scope: meal});
+});
+shuffle(namesArr);
+$.each(namesArr, function (index, value) {
+  $("<div>" + value + "</div>")
+  .appendTo("#droparea")
+  .droppable({scope:value.toLowerCase(),
+  drop:function(event, ui){
+    $(ui.draggable).append($(this).text());
+    score++;
+$(this).hide("puff", "fast");
 
-  $("#droppable").droppable({
-    accept: "#draggable",
-    drop: function (event, ui) {
-      $(this).addClass("ui-state-highlight").find("p").html("Dropped!");
-    },
-  });
-
- $("#draggable2").draggable();
-
-  $("#droppable2").droppable({
-    accept: "#draggable2",
-    drop: function (event, ui) {
-      $(this).addClass("ui-state-highlight").find("p").html("Dropped!");
-    },
-  });
-
- $("#draggable3").draggable();
-
-  $("#droppable3").droppable({
-    accept: "#draggable3",
-    drop: function (event, ui) {
-      $(this).addClass("ui-state-highlight").find("p").html("Dropped!");
-    },
-  });
-
-  $("#draggable4").draggable();
-
-  $("#droppable4").droppable({
-    accept: "#draggable4",
-    drop: function (event, ui) {
-      $(this).addClass("ui-state-highlight").find("p").html("Dropped!");
-    },
-  });
+if(score == namesArr.length){
+$("<div><p>Super!!!<br>Nochmal?</p></div>")
+.dialog({modal:true,
+buttons:[{text:"Ja",
+click:function(){
+  window.location.reload();
+}},
+{text:"Nein",
+click:function(){
+  $(this).dialog("close");
+}}]
+});
+  }
+}});
+});
 });
 
+function shuffle(arr){
+  return arr.sort(function(){
+    return .5 - Math.random()
+});
+}
+
+
+
+//slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
 

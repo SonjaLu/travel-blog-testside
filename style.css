@@ -411,20 +411,55 @@ h1 {
      margin: 50px 5px 5px 20px;
         z-index: 6; }
 
-.gamepic {
-    width: 120px;
-      height: 100px;
+#minigame {
+  margin-left: 30%;
+  margin-top:100px;;
+}
+#minigame h3 {
+ text-align: start;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: Georgia, sans-serif;
+}
+
+#meals, #droparea {
+    width: 100%;
+      float: left;
       padding: 0.5em; 
 }
 
-.minigame {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+#meals div, #droparea div {
+    width: 120px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+    padding: 0.5em;
+    border-radius: 5px;
+    z-index: 7;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: Georgia, sans-serif;
+}
+#droparea div {
+    border: 1px solid #999;
+    line-height: 100px;
+    z-index: 6;
+   
 }
 
-.minigamep {
-    text-align: center;
-    color: grey;
+#meals div img{
+  width: 120px;
+  height: 100px;
+}
+
+.ui-dialog {
+  background: #fff;
+  border-radius: 10px;
+ font-size: 20px;
+ 
+}
+
+.ui-dialog-titlebar {
+  display: none;
 }
