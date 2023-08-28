@@ -50,12 +50,18 @@ ul {
     display: flex;
     justify-content: space-between;
     z-index: 5;
+    flex-wrap: wrap;
+text-align: center;
 }
 li {list-style-type: none;
     overflow: hidden;
    padding-right: 5px;
    margin-right:10px;
     text-decoration: none;
+    flex-grow:1;
+    flex-basis: auto;
+    flex-shrink: 0;
+
 }
 
 li a {
@@ -64,6 +70,7 @@ li a {
     text-align: center;
     padding-bottom: 50px;
     text-decoration: none;
+    transition: all .5s ease;
     
 }
 
@@ -396,20 +403,6 @@ h1 {
     margin-left: 50px;
  }
 
- .ui-widget-content { 
-    width: 140px; 
-    height: 120px;
-     padding: 0.5em;
-      float: left;
-      margin: 30px 5px 5px 20px;
-    z-index: 8; }
-
- .ui-widget-header {
-     width: 150px;
-      height: 150px;
-       padding: 0.5em;
-     margin: 50px 5px 5px 20px;
-        z-index: 6; }
 
 #minigame {
   margin-left: 30%;
@@ -457,9 +450,15 @@ h1 {
   background: #fff;
   border-radius: 10px;
  font-size: 20px;
- 
+
 }
 
 .ui-dialog-titlebar {
   display: none;
 }
+
+@media screen and (max-width: 600px) {
+  
+  }
+
+  
