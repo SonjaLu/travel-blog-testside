@@ -95,7 +95,16 @@ function shuffle(arr){
 });
 }
 
+$(document).ready(function() {
+  $('.faqbox').on('click', function(event) {
+      event.preventDefault(); // Verhindert das sofortige Navigieren zum Link
+      $(this).addClass('animate');
+  });
 
+  $('.faqbox').on('animationend', function() {
+      window.location.href = $(this).find('a').attr('href'); // Navigiert zur URL des Links innerhalb der faqbox
+  });
+});
 
 //slideshow
 let slideIndex = 1;

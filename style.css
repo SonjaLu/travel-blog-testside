@@ -389,10 +389,27 @@ h1 {
     padding: 20px;
     background-color: lightgrey;
     text-decoration: none;
-    cursor: pointer;
-    transform: skew(20deg, -10deg);
+    cursor: pointer; 
     z-index: 10;
   }
+
+  @keyframes rotateAndFade {
+    0% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    80% {
+        transform: rotateX(720deg); /* 2 x 360° für zwei volle Drehungen */
+        opacity: 1;
+    }
+    100% {
+        transform: rotateX(720deg);
+        opacity: 0;
+    }
+}
+
+.animate {
+    animation: rotateAndFade 3s forwards; }
 
   .faqb {
     text-decoration: none;
