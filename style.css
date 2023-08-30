@@ -63,6 +63,7 @@ li {list-style-type: none;
     flex-grow:1;
     flex-basis: auto;
     flex-shrink: 0;
+text-align: center;
 
 }
 
@@ -99,6 +100,9 @@ ul h2 {
     margin-left: 190px;
     flex-direction: row;
     position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
  ul h2:hover {
@@ -124,7 +128,29 @@ h2:active {
     text-decoration: underline;
 }
 
+#hl {
+  transition:0.5s; 
+position: relative;
+}
 
+#hl:before {
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.5s;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+#hl:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
+}
 
 .maintext {
     position: absolute;
@@ -197,11 +223,65 @@ h1 {
     
    }
 
+   .destiny {
+    justify-content: center;
+    align-items: center;
+   }
+
+.wave {
+  position: relative;
+  width: 1000px;
+  height:400px;
+  margin-top: -150px;
+  display: flex;
+  justify-content: center;
+}
+
+.wave h1 {
+  position: absolute;
+  text-align: center;
+  line-height: 300px;
+  font-size: 150px;
+}
+
+.wave h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.wave h1:nth-child(2) {
+  color: #03a9f4;
+  animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% {
+    clip-path: polygon(1% 36%, 18% 39%, 29% 47%, 44% 55%, 61% 60%, 77% 56%, 89% 51%, 100% 46%, 100% 98%, 1% 99%);
+  }
+  50% {
+    clip-path: polygon(0% 66%, 12% 55%, 26% 48%, 44% 48%, 61% 53%, 77% 48%, 77% 48%, 88% 54%, 100% 63%, 100% 99%, 2% 100%);
+  }
+  100% {
+    clip-path: polygon(1% 36%, 18% 39%, 29% 47%, 44% 55%, 61% 60%, 77% 56%, 89% 51%, 100% 46%, 100% 98%, 1% 99%);
+  }
+
+}
+
+.destinationbox {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+font-family: Verdana,  sans-serif;
+
+
+}
+
    #costaricapic {
     display: flex;
     z-index: 5;
     display: flex;
-    margin-left: 45px;
+    margin-left: 40px;
     width: 200px;
     height: auto;
     margin-bottom: 20px;
@@ -227,8 +307,15 @@ h1 {
     margin-bottom: 20px;
    }
 
+   .country img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+   }
+
    .country{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
    }
 
    .description {
@@ -238,19 +325,12 @@ h1 {
     width: 60%;
    }
 
-   #myTooltip {
-    display: inline-block;
-    padding: 15px;
-    background: rgba(0,0,0,.5);
-    color: white;
-    position: absolute;
-    display: none;
-    z-index: 10;
-    border-radius: 5%;
-  }
+
 
   .countryname {
     margin-left: 40px;
+    flex-direction: column;
+    display: flex;
   }
              
     .countrybtn {
@@ -275,6 +355,17 @@ h1 {
         color: black;
         text-decoration: none;
         transform: scale(1.1); ;
+      }
+
+      #myTooltip {
+        display: inline-block;
+        padding: 15px;
+        background: rgba(0,0,0,.5);
+        color: white;
+        position: absolute;
+        display: none;
+        z-index: 10;
+        border-radius: 5%;
       }
 
       .rezepte {

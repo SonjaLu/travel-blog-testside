@@ -41,10 +41,16 @@ $(document).ready(function () {
         "background-color": "black",
         color: "white",
       });
+      $(".header, .header ul").css({
+        "background-color": "grey",  
+      });
     } else {
       $("body").css({
         "background-color": "white",
         color: "black",
+      });
+      $(".header, .header ul").css({
+        "background-color": "lightblue",  
       });
     }
   });
