@@ -242,6 +242,7 @@ h1 {
   text-align: center;
   line-height: 300px;
   font-size: 150px;
+  text-shadow: 11px 2px 3px rgb(190 190 190 / 0.2);
 }
 
 .wave h1:nth-child(1) {
