@@ -285,6 +285,7 @@ font-family: Verdana,  sans-serif;
     width: 200px;
     height: auto;
     margin-bottom: 20px;
+    box-shadow: 6px 6px 10px rgb(0 0 0 / 0.2);
    }
 
    #spainpic{
@@ -295,6 +296,7 @@ font-family: Verdana,  sans-serif;
     width: 200px;
     height: auto;
     margin-bottom: 20px;
+    box-shadow: 6px 6px 10px rgb(0 0 0 / 0.2);
    }
 
    #skpic{
@@ -305,6 +307,7 @@ font-family: Verdana,  sans-serif;
     width: 200px;
     height: auto;
     margin-bottom: 20px;
+    box-shadow: 6px 6px 10px rgb(0 0 0 / 0.2);
    }
 
    .country img:hover {
@@ -596,7 +599,7 @@ font-family: Verdana,  sans-serif;
    text-transform: uppercase;
    transition: all 0.5s;
    overflow: hidden;
-   
+   box-shadow: 6px 6px 10px rgb(0 0 0 / 0.2);
 }
 
 .faq-btn:before {
